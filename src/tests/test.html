@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Application Deefy</title>
+  <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<header>
+  <button type="button" href="?action=default">default</button>
+  <button type="button" href="?action=playlist">playlist</button>
+  <button type="button" href="?action=add-playlist">add-playlist</button>
+  <button type="button" href="?action=add-user">login</button>
+</header>
+<body>
+  <!--<form method="post" action="?action=add-playlist"><input type="text" name="nom"><button type="submit" name="valider">valider</button></form>
+<h1></h1>Bienvenue dans Deafy</h1>
+<p>choisissez un Bouton pour ajouter une playlist ou une chanson à la playlist actuelle</p>-->
+<form method="post" action="?action=add-track">
+  <label>Titre de la piste : <input type="text" name="track_title" required></label><br>
+  <label>Fichier audio (MP3) : <input type="file" name="audio_file" accept=".mp3" required></label><br>
+  <button type="submit">valider</button>
+</form>
+</body>
+</html>
